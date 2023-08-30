@@ -10,6 +10,8 @@ r = 70 -- Radius
 function love.load()
   theta = theta0
   T = 2*pi*sqrt(L/g)
+  linhax = 0
+  linhay = 0
   trans = love.math.newTransform()
   trans:translate(love.graphics.getWidth()/2, love.graphics.getHeight()/2-200)
 end
@@ -18,8 +20,6 @@ function love.update(dt)
   theta = theta0 * cos(2*pi*t/T + phi)
   x = L*sin(theta)
   y = L*cos(theta)
-  linhax = 0
-  linhay = 0
 end
 function love.draw()
   love.graphics.applyTransform(trans)
