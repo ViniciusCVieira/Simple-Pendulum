@@ -1,6 +1,6 @@
 -- Using the love2d framework
 cos, sin, pi, sqrt = math.cos, math.sin, math.pi, math.sqrt
-theta0 = 1
+theta0 = 1 -- Initial angle
 t = 0
 L=300 -- Length
 g=9.8 -- Gravity
