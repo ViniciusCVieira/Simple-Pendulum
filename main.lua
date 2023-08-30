@@ -1,10 +1,11 @@
+-- Using the love2d framework
 cos, sin, pi, sqrt = math.cos, math.sin, math.pi, math.sqrt
 theta0 = 1
 t = 0
-L=300
-g=9.8
-phi=0
-r = 70
+L=300 -- Length
+g=9.8 -- Gravity
+phi=0 -- Phase constant
+r = 70 -- Radius
 
 function love.load()
   theta = theta0
